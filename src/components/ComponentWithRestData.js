@@ -12,14 +12,11 @@ const ComponentWithRestData = () => {
   }, []);
 
   const renderCountryOptions = () => {
-    return (
-      countries &&
-      countries.map(({ name, alpha2Code }) => (
-        <option key={alpha2Code} value={alpha2Code}>
-          {name}
-        </option>
-      ))
-    );
+    return countries.map(({ name, alpha2Code }) => (
+      <option key={alpha2Code} value={alpha2Code}>
+        {name}
+      </option>
+    ));
   };
 
   return (
