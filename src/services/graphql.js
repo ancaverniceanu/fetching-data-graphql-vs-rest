@@ -1,4 +1,3 @@
-// Source and documentation: https://github.com/lennertVanSever/graphcountries
 const fetchCountries = () => {
   return fetch('https://countries-274616.ew.r.appspot.com', {
     method: 'POST',
